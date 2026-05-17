@@ -5845,17 +5845,7 @@ async function executeAutoSW() {
       subtree: true
     });
   }
-  function setupEventListeners() {
-    const TRANSITION_DURATION = 200;
-    document.getElementById('inject-btn').addEventListener('click', () => {
-      showTemporaryNotification("Attempting to inject...", "#3a78ff");
-      try {
-        performInjection();
-        if (injectedBool) showTemporaryNotification("Injection Successful!", "#4CAF50");
-        else showTemporaryNotification("Injection Failed. Check console.", "#FF5252");
-      } catch (e) {}
-    });
-    document.getElementById('new-account-btn').addEventListener('click', clearCookiesAndReload);
+  document.getElementById('new-account-btn').addEventListener('click', clearCookiesAndReload);
     document.getElementById('minimize-hack-ui').addEventListener('click', () => {
       ui.classList.add('hidden');
       setTimeout(() => {
