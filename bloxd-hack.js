@@ -1,6 +1,3 @@
-window.inGame = true;
-window.is_in_game = function() { return true; };
-window.player_spawned = true;
 // ==UserScript==
 // @name         Simple Hack Client v2
 // @namespace    Idk
